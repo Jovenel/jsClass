@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrainement</title>
+  
+  <style>
+    h1{
+      text-align: center; 
+      padding: 5px 0; 
+      background-color: #000000; 
+      color: #00c6ff;
+    }	
+    h2{
+      padding-left: 10px; 
+      background-color: #000000; 
+      color: #ffffff;
+    }	
+  </style>
+</head>
+<body>
+  
+    <script type="text/javascript">
+
+        // ----1--- COMMENTAIRES 
+
+        // Commentaire sur une seule ligne avec deux back-slash.
+
+        /*
+            Commentaires sur plusieurs lignes avec un back-slash étoiles back-slash
+        */
+
+        // ---2--- Affichage 
+
+        
+
+
+        document.write('<h1> ENTRAINEMENT JavaScript </H1>');
+        /*
+
+        //alert('hello'); // Boite de dialogue 
+
+        //confirm('Etes vous sur ?'); // boite de dialogue avec un bouton de confirmation
+
+        //prompt('Quel ages as-tu ?'); //Boite de dialogue avec un champ à remplir
+ 
+        //console.log('Attention aux erreurs de syntaxes');   // message écrit dans la console de débugage 
+
+        console.info('Je suis pareil que mon frère console.logavec une petite icone(i) ')
+        */
+
+        // ---3--- Variables / décclaration / affectation 
+
+        document.write('<h2> les variables : déclaration / affectation </H2>'); // mon affichage avec html
+
+         // Var maBoite;   
+        let maBoite; 
+        maBoite =10; // Je donne la valeur 10 à ma variable "maBoite"
+        
+        //let maBoite2 =10; 
+        document.write("Varible 'maBoite' = " + maBoite)  
+
+        console.log(maBoite)
+        
+
+        let prenom = 'Jovenel', nom = ' Destina.', ag_e = 24;
+
+        // ajout d'une valeur sans remplacer son contenu d'origine
+        //prenom += ' Destina';
+
+            prenom +=nom
+        document.write('<br>')
+        document.write(prenom)
+
+        //let qquChose;
+        //document.write(qquChose) // Dans la console : ReferenceERRO : qquChose IS NOT DEFINED. cette erreur arrive car nous n'avons pas déclaré de variable.
+
+        // Exo 
+            /* Utiliser une boite de dialogue de confirmation. Stoker ce que va saisir un utilisateur dans une variable et afficher cette variable sur votre page html. */
+        
+           // let ages = prompt('Quel âges as-tu?'); // Nous pouvons stocker ce que va saisir un utilisateur dans une variable
+           // document.write('<br>')
+           // document.write(ages)
+           // console.log(ages)
+
+            /* 
+    Exercice : prof
+      Utiliser une boite de dialogue avec champ pour remplir. Stoker ce que va saisir un utilisateur dans une variable et afficher le contenu de cette variable sur votre page html. 
+    */
+    /*let age = prompt('Quel âge as-tu ?'); // Nous pouvons stocker ce que va saisir un utilisateur dans une variable.
+    document.write('<br>');
+    document.write(age);
+    console.log(age);
+    */
+
+    // --- 4 --- TYPES DE DONNEES 
+    document.write('<h2> les types de données  </H2>'); 
+
+    // Les types numériques (number)    
+    let chiffre = 20; // affectation tel quel, sans quotes ni double quotes = ype numériques (number)
+
+    // Le types chaine de caractères (string)
+    // Les quote et les doubles quotes sont là pour indiquer les types de valeur est STRING
+    let monText = "voici une autre phrase écrite entre double quotes";
+
+    let apostrophes = 'pour l\'utilisation d\'une apostrophe dans les quotes simples, il faut mettre un caractère d\'échappement';
+
+    let numero = '10'; // si nous écrivons un chiffre entre quotes (ou double quotes), l'ordinateur le traitera comme un types STRING.
+
+    // Le type Booléen (Boolean)
+    // Le type boolean ne prend que 2 valeurs : TRUE ou FALSE 
+        let choix = true ; // ou false 
+
+    // Typeof permet de checker le type d'une variable 
+    
+
+    document.write(typeof(chiffre));  //NUMBER
+    document.write('<br>');
+    document.write(typeof(monText)); // STRING
+    document.write('<br>');
+    document.write(typeof(apostrophes)); // STRING
+    document.write('<br>');
+    document.write(typeof(numero)); // STRING
+    document.write('<br>');
+    document.write(typeof(choix)); // BOOLEAN
+
+    // --- 5 --- CONSTANTES 
+    document.write('<h2> CONSTANTES  </H2>'); 
+    // Les constantes sont des "boîtes virtuelles" dont la valeur NE PEUT ÊTRE MODIFIEE autrement dit : dont la valeur est CONSTANTE.
+
+    const BOUGE_PAS = 'ma constante impossible à modifier';
+
+    //document.write(BOUGE_PAS) // affichera (dans la consol) --->typeERROR : assignement to constant variable 
+    //document.write('<br>');
+
+    // const    BOUGE_PAS = "Hello"; // affichera (dans la consol) --->typeERROR : syntaxERROR : has already been declared  
+
+    // --- 6 --- CONCATENATION 
+    document.write('<h2> CONCATENATION  </H2>');
+
+    let prenom1 = 'John ';
+    let nom2= ' Wicked'  ;
+    
+    //document.write(prenom1)
+   // document.write(nom2)
+
+    document.write(prenom1 +nom2 ) // + ou , 
+    document.write('<br><strong>' + prenom1 + '</strong> -' + nom2)
+    
+
+    // --- 7 --- OPERATEURS ARITHMETIQUES 
+    document.write('<h2> OPERATEURS ARITHMETIQUES  </H2>');
+
+    let addition = 10+5; // addition 
+    document.write( "Soustraction:"+addition + '<br>')
+    console.log(addition)
+
+    let deux = 2;
+
+    let result = addition + deux;
+    console.log(result)
+
+    let incrementation = 1; 
+    //incrementation = incrementation + 1
+    //incrementation += 1
+    incrementation ++;
+    console.log(incrementation)
+
+    let soustraction = 10-5 ; // soustraction 
+    document.write("Soustraction:"+ soustraction + '<br>')
+    console.log(soustraction)
+
+    let decrementation = 1; 
+    decrementation = decrementation - 1;
+    //console.log("decrementation :" + decrementation )
+    //decrementation -= 1;
+
+    decrementation --; // retranche 1 
+    console.log("decrementation:" + decrementation);
+
+    let multiplication = 10*5 // multiplication
+    document.write("multiplication:" + multiplication + '<br>');
+
+    let division = 10/5 // division
+    document.write("division:" + division + '<br>');
+
+    let total = (3+5) *2; // on utilise les parenthèses pour prioriser certaines elements d'une opération complexe.
+
+    let chiffre1 = 10;
+
+    chiffre1 = chiffre1 + 5 ; // veut dire chiffre 1 = 10 + 5 donc 15.
+    chiffre1 += 5; // ATTENTION PAS DE LET. Equivaut à chiffre1 = chiffre1 + 5; donc 20
+
+    // --- 8 --- CONDITIONS ET OPERATEUR DE COMPARAISONS 
+    document.write('<h2> CONDITIONS ET OPERATEUR DE COMPARAISONS </h2>'); 
+    
+    let a = 10, b =5, c = 2;
+
+    /*
+    IF/ELSE 
+    Si le resultat de la parenthèse est TRUE, alors j'execute les instruction du if sinon j'execute les instruction du ELSE. 
+    */
+
+    if(a > b) // si A est supérieur à B 
+     {
+      document.write('A est striquement supérieur à B <br>');
+    }
+    else // sinon ... A n'est pas supérieur à B
+    {
+      document.write('A n\'est striquement supérieur à B <br>');
+    }
+    //IF avec &&
+    console.log(a>b && b > c);
+    if (a > b && b > c)
+    {
+      document.write('ok pour les 2 conditions <br>');
+    }
+    else
+    {
+      document.write("faux pour l'une des conditions <br>")
+    }
+
+    // IF avec or ou
+    if (a>b || b < c)
+    {
+      document.write("ok pour au moins l'une des deux condition<br>")
+    }
+    else
+    {
+      document.write("faux pour les deux conditions <br>");
+    }
+
+    // a = 10, b =5, c = 2;
+
+
+    /* 
+    Le double égale (==) permet de vérifier une information à l'intérieur d'une variable 
+    */
+    if(a==8)
+    {
+      document.write("A")
+    }
+    else if (a != 10) // sINONSI A est différent de 10
+    {
+      document.write("B");
+    }
+    else // sinon, c'est que je suis ni tombé dans le if, ni dans le else if, je me trouve ici donc dans le else 
+    {
+      document.write("C <hr>");
+    }
+
+    /*créer une variable couleur qui sera égale à jaune.
+    Écrivez ensuite une condition pour vérifier si la variable est égale à bleu, rouge, vert.
+    Si la variable est égale à rouge on affiche : vous aimez le rouge.
+    Si la variable est égale à bleu on affiche : vous aimez le bleu.
+    Si la variable est égale à vert on affiche : vous aimez le vert.
+    Sinon on rentre dans aucune de ces conditions on affiche : vous n'aimez ni le bleu, ni le vert, ni le rouge...*/
+
+
+      let color = 'jaune';
+
+        if (color == 'rouge') {
+            document.write("vous aimez le rouge");
+        }
+        else if (color == 'bleu') {
+            document.write("vous aimez le bleu");
+        }
+        else if (color == 'vert') {
+            document.write("vous aimez le vert");
+        }
+        else if (color == 'jaune') {
+            document.write("vous aimez le jaune<hr>");
+        }
+        else {
+            document.write("vous n'aimez ni le bleu, ni le vert, ni le rouge... ");
+        }
+
+
+
+       /* //Akses
+        // version switch
+        let jaune = 'rouge';
+
+switch (rouge) {
+    case 'rouge':
+        document.write("Dans le switch - Vous aimez le rouge<br>");
+        break;
+    case 'bleu':
+        document.write("Vous aimez le bleu<br>");
+        break;
+    case 'vert':
+        document.write("Vous aimez le vert<br>");
+        break;
+    default:// Cas par défaut, sinon on entre pas dans les cas précédent.
+        document.write("Vous n'aimez ni le bleu , ni le rouge, ni le vert");
+}*/
+
+ /*  
+  Trouvez le moyen de demander à l'internaute son prénom.
+  Récupérer ensuite le prenom saisi par l'internaute pour l'enregistrer dans une variable, puis effectuer une condition qui affiche "Bonjour" avec le prénom récupérer SI la variable est du type string. 
+*/
+
+// Je récupère la valeur saisie dans le propmt et je l'enregistre dans ma vaiable name
+//let name = prompt('votre nom ?')
+   // console.log(name)
+
+  // je vérifie si le type de ma variable est égale à string gràce à la function typeof
+   // if(typeof name =='string'){
+    //  document.write("bonjour "+ name)
+    //}
+  
+
+    let voiture = "audi";
+    if (voiture == 'audi')
+    {
+      document.write('jolie <br>')
+    }
+    else
+    {
+      document.write('moche <br>')
+    }
+
+
+
+    // Ternaire 
+    // ? = alors 
+    // : SINON 
+
+
+    // let car = "audi";
+     // car == "audi" ? document.write("jolie") : document.write("moche"); (erwan)
+
+     voiture == 'audi'? document.write('jolie<br>') : document.write('moche <br>');
+     document.write(voiture== 'aud'? 'jolie <br>' : 'moche <br>');
+
+     let one = 1, varb = "1";
+     console.log(one=== varb);
+
+     /* 
+      Egal (==) Renvoi TRUE si les variables sont juste EGALES par leurs valeurs.
+      Strictement égal (===) Renvoi TRUE si les variables sont égales et du même type.
+    */
+    if(one === varb)
+    {
+      document.write("On rentre dans la condition ! <br>");
+    }
+
+
+      let test = 3<1; // la valeur implicite de test est FALSE car 3 n'est pas inférieur à 1
+
+      console.log("TEST"+ test);
+      console.log("TEST"+ !test);
+      if (test){// Le "!" est l'opérateur not, qui veut dire "inverse la valeur boolean"
+        document.write("")
+      }
+
+      /*
+      Conclusion : une condition renvoie tjs TRUE ou FALSE, et les instruction de la condition ne seront exécutées que si la valeur de retour est TRUE. 
+      Le type Boolean est donc à la fois un type mais aussi une valeur qui est retournée lorsqu'on effectue des tests sur des données.
+      */
+
+      // ---9 --- OPERATEURS 
+
+      // Nous pouvons utiliser tous les opération de comparaison pour tester des variable entre elles 
+
+            /*
+      Exemple : let var1 = 3, var2 = 4;
+
+      Égal (==) Renvoi TRUE si les opérandes sont ÉGALES
+        3 == var1
+        "3" == var1
+        3 == '3'
+
+      Strictement égal (===) Renvoi TRUE si les opérandes SONT ÉGALES ET du MÊME TYPE
+        3 === var1
+
+      Différent de (!=) Renvoi TRUE si les opérandes ne sont PAS ÉGALES
+        var1 != 4
+        var2 != '3'
+
+      Strictement différent (!==) Renvoi TRUE si les opérandes ne sont PAS ÉGALES ET / OU PAS du MÊME TYPE	
+        var1 !== '3'
+        3 !== '3'
+        
+      Plus grand (>) Renvoi TRUE si l'opérande de GAUCHE EST PLUS GRANDE que l'opérande de droite
+        var2 > var1
+        "12" > 2
+
+      Plus grand ou égal (>=) Renvoi TRUE si l'opérande de GAUCHE EST PLUS GRANDE OU ÉGALE à l'opérande de droite
+        var2 >= var1
+        var1 >= 3
+        
+      Plus petit (<) Renvoi TRUE si l'opérande de GAUCHE EST PLUS PETITE que l'opérande des droite 
+        var1 < var2
+        12 < var2
+        
+      Plus petit ou égal (<=) Renvoi TRUE si l'opérande de GAUCHE EST PLUS PETITE OU ÉGALE à l'opérande de droite
+        var1 <= var2
+        var2 <= 5
+        
+      Conclusion : une condition renvoie toujours TRUE ou FALSE, et les instructions de la condition ne seront éxécutées QUE si la valeur de retour est TRUE.
+      if (condition) {
+        instructions ;
+      }
+      Le type boolean est donc à la fois un type mais aussi une valeur qui est retournée lorsqu'on effectue des tests sur des données.
+
+
+      >> JavaScript compte 3 opérateurs logiques : 
+          - AND équ. && 
+          - OR équ. || 
+          - NOT équ. !
+      */
+
+      // ---10--- boucles 
+      document.write("<h2>Le boucles <br></h2>")
+
+      /*document.write('0 <br> ')
+      document.write('1 <br> ')
+      document.write('2 <br> ')
+      document.write('3 <br> ')
+      document.write('4 <br> ')
+      document.write('5 <br> ')*/
+
+      // boucles WHILE
+
+      let i = 0; // on initialise une variables à 0 
+
+      
+      while(i<=5) { // La condition de la boucle : "tant que i <=5 "
+        document.write(i+'<br>');
+        document.write("Hello world <br>") // les instructions qui devront donc être éxécutée 6 fois ! (le tour 0 y compris)
+        i++ // on ajoute 1 à 1
+ }
+
+ let i2 = 0;
+
+ while(i2<= 5){
+   document.write(i2+'---');
+   i2++
+ }
+
+// @Amelie
+ /*let i2 = 0;
+while( i2 <= 5){
+  if(i2 < 5){
+    document.write(i2 + "---");
+  }
+ else{
+   document.write(i2);
+ }
+  i2++;
+}*/
+
+
+/* 
+    @Marion
+    Version sans "IF"
+  */
+  i4 = 0;
+    while (i4 < 5) {
+      document.write(i4);
+      i4++;
+    }
+    document.write(i4+"<br>");
+
+  /* 
+    Correction
+  */
+  let i3 = 0; 
+  while(i3 <= 5){
+    if(i3 === 5 )
+    {
+      document.write(i3+"<br>");
+    }
+    else
+    {
+      document.write(i3 + '---');
+    }
+    i3++;
+  }
+
+  /* 
+    Optionnel "IF" sans accolade.
+  */
+  while(i3 <= 5){
+    if(i3 === 5 )
+      document.write(i3 );
+    else
+      document.write(i3 + '---');
+    i3++;
+  }
+
+  // Initialiser ; condition ; incrémentation 
+  for (let i =0; i<= 5; i++) {
+    document.write(i+ "dans la boucle For ! <br>")
+
+  }
+  for (let i =0; i<= 5; i++) {
+    if(i===5){
+      document.write(i);
+    }
+    else {
+
+    document.write(i+ "---")
+    }
+  }
+
+  // ---11--- FUNCTION PREDEFINIE 
+  document.write("<h2> FUNCTION PREDEFINIE <br></h2>")
+
+
+  let text = "Hello John"
+  document.write(text+"<br>");
+  document.write(text.toLocaleLowerCase()+"<br>"); //passer tout en miniscule
+  document.write(text.toLowerCase() + "<br>"); //ou
+  document.write(text.toLocaleUpperCase() + "<br>"); // EN MAJUSCULE 
+  document.write(text.length + '<br>') // pas de parenthèse car il s'agit d'une propriété, la propriété lenght retourneun entier qui le nombre d'élément dans une chaine de caractère.
+
+
+// ---12--- FUNCTION UTILISATOR
+  document.write("<h2> FUNCTION UTILISATOR <br></h2>")
+
+  function hello(){ // par convention : ouverture de parenthèse collée à hello()
+    //ici le code à éxécuté 
+    document.write("Hello JOHN <br>");
+  }
+//hello();
+
+//let apellido = "Mick"
+//function hello2(name, age, pays) {
+//document.write("Hello"+name2)
+//}
+//hello2()
+
+
+
+ /*
+    créer une function personnage qui prend deux paramètres/arguments (prenom, âge)
+    si j'appelle ma function personnage avec un nom et un âge
+    exemple de call : personnage('robert', 18) ,ma function doit m'afficher "Hello robert j'ai 18 ans".
+  */
+//let apellido ="Robert",edad =18 
+  function personnage(apellido,edad){
+    document.write("Hello "+apellido+" j'ai "+edad+" ans <br>")
+  }
+  personnage("Robert",18);
+
+   /*
+    créer une function majeur qui prend un paramètre/argument (âge)
+    ma function doit vérifier l'âge quel reçois en argument
+    et afficher "vous êtes majeur" si l'âge reçu est supérieur ou égal à 18
+    sinon "vous êtes mineur"
+  */
+
+  function majeur(age){
+    
+   if(age>= 18){
+   document.write("vous êtes majeur <br>");
+  }
+  else{
+  document.write("vous êtes mineur");
+}
+}
+
+majeur(18)
+
+
+/*
+    créer une function qui prend un paramètre/argument (message)
+    ma function doit afficher 10 fois l'argument passé en paramètre
+    le 8eme message doit être en majuscule (ternaire)
+  */
+
+  function message(text) {
+    let l = 1
+    while(l <= 10)
+  {
+    if(l === 8)
+    {
+      document.write('<span style=\'color:blue;\' >'+text.toLocaleUpperCase() + '</span><br>')
+      document.write('<hr>'); 
+    }
+    else{
+      document.write(text + '<br>')
+      document.write('<hr>');
+    }
+    l++
+  }
+  }
+  message("Hello World")
+  // correcction 
+  /*function argument (meassage){
+    for(let m = 0;m<=10;m++){
+      m === 8 ? document.write(message.toLocaleUpperCase() +'<br>') : document.write(meassage+'<br>')
+    }
+  }
+argument('Bonjour Monde')
+*/
+
+/*
+A chaque fois qu'on répète une action, voir s'il n'est pas possible d'y mettre une fonction 
+Nus avons donc la possibilité de créer nos propres fonctions avec nos propres paramètres.
+*/
+
+document.write(" ")
+
+/*
+//@simple
+Créeons une fonction pour nous faciliter l'utilissation du document.write
+*/
+
+function d(arg){
+document.write(arg);
+}
+d("text fonction");
+/*
+@pro
+Créeons une fonction pour nous faciliter l'utilissation du document.write
+*/
+
+function d(arg,mode){
+  if (!mode){
+    mode = 0 // Si mode n'est pas défini mode est égale à 0 
+  }
+  if (mode==1){
+    document.write('<h2>'+arg+'</h2>');
+  }
+  else {
+    document.write('<p>'+arg+ '</p>');
+  }
+}
+d("Jovenel",1)
+
+/*
+Le mot clé return permet de sortir les instructions.
+*/
+function test1(){
+  let number1 = 100 // Variable explicite interne donc Locale 
+  console.log("before return : ", number1);
+  return number1;
+  console.log("after return : ", number1);
+}
+
+let results = test1();
+console.log(results)
+d(results)
+
+d("LES TYPES ARRAYS", 1)
+
+/*
+@Array
+  LES ARRAYS permettent de conserver plusieurs valeurs au sein d'une variable. 
+  Tous les types peuvent être dans un tableau.
+
+  Chaque élément/item contenu dans notre array, possède un INDEX.
+  L'INDEX est référent qui va permettre de cibler et d'appeler sa valeur correspondante dans notre tableau
+*/
+
+let fruits = ["banane", "Pomme", "Mango", "Strawberry","Framboise" ]
+console.log(fruits)
+d(fruits.join(' / ')) // Afficher la totalité du array
+
+d(fruits[0]) // afficher un élément en particulier : 
+d(fruits[1]) // afficher un élément en particulier : 
+d(fruits[2]) // afficher un élément en particulier : 
+d(fruits[3]) // afficher un élément en particulier : 
+
+d(fruits.length)
+d('<hr>')
+for (let i=0;i<fruits.length;i++){
+    d(fruits [i]);
+}
+    </script>
+</body>
+</html>

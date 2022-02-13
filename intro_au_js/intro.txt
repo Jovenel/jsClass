@@ -1,0 +1,13 @@
+Js: Manipuler le DOM : 
+PERFORMANT ET interractif :
+Animation : 
+Le Js représentation de la structure HTML. 
+Exemple animation : carroussel, slide, vanish
+
+conclusion 
+DOM :
+facile à apprendre 
+PERFORMANT
+animation
+interractive 
+grande communauté. 

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selecteurs</title>
+</head>
+<body>
+  <div class="avion" >Airbus1</div>
+  <div class="avion" >Airbus2</div>
+  <div class="avion" >Airbus3</div>
+
+  <div class="voiture" >Voiture1</div>
+  <div class="voiture" >Voiture2</div>
+  <div class="voiture" >Voiture3</div>
+
+  <p>paragraphe 1</p>
+  <p>paragraphe 2</p>
+  <p>paragraphe 3</p>
+
+  <section id="maSection">Section</section>
+
+  <span>span</span>
+
+  <script>
+// SELECTION NATURELLE (SANS GETELEMENT)
+console.log('--------- SELECTION NATURELLE -----------')
+
+let monId =maSection
+console.log(monId)
+
+/*Equivalent : let monId = document.getElementById('maSection')
+Tous les id sont atteignable sans écrire de getElement.
+*/
+
+
+console.log('body:'+document.body.innerHTML);
+console.log(document.body)
+// body est un cas particulier. Il est atteignable sans getElement puisqu'il est unique) 
+
+// -----------------SELECTION BYID--------------
+console.log('-------selectionb by ID-----------');
+
+let monId2 = document.getElementById ('maSection')
+
+console.log('monId2:'+monId2) // monID2 : [objet HTMLElement]
+
+console.log('monId:'+monId);
+
+console.log('monId:'+monId.innerHTML)
+
+
+// ------------------- SELECTION TAGNAME 
+console.log('----- SELECTION TAGNAME -----'); 
+
+let maBalise = document.getElementsByTagName('span');
+
+console.log('maBalise : ' + maBalise); // [object HTMLCollection]
+
+console.log('maBalise : ' + maBalise[0].innerHTML);
+ 
+console.log(maBalise);
+
+// ------------------- SELECTION CLASSNAME 
+console.log('----- SELECTION CLASSNAME -----'); 
+
+let mesClasses = document.getElementsByClassName('avion');
+
+console.log("mesClasses : " + mesClasses);
+
+console.log('mesClasses : '  + mesClasses[2].innerHTML);
+
+console.log('----- boucle for className ----- ')
+
+// get all class avion
+
+for (let i = 0; i < mesClasses.length; i++){
+  console.log("mesClasses:" + mesClasses[i].innerHTML)
+}
+
+
+// ------------------- SELECTION QUERYSELECTOR 
+console.log('----- SELECTION QUERYSELECTOR -----');
+
+let p = document.querySelector('p')
+
+console.log("QuerySelector:"+p)// [object HTMLParagraphElement]
+console.log("QuerySelector:"+p.innerHTML)
+
+// ------------------- SELECTION QUERYSELECTORALL 
+console.log('----- SELECTION QUERYSELECTOR -----');
+
+// get all BALISE <P> 
+  // Afficher les contenu des balises <p> dans la console 
+
+    let ps = document.querySelectorAll('p')
+    console.log("QuerySelectorall:"+ps)
+
+    for (let i = 0 ; i < ps.length; i++){
+      console.log('les p:'+ps[i].innerHTML)
+    }
+   
+
+
+    /*
+     @resume des principaux selecteurs
+     *
+     *
+     * 
+     * Id / sELECTEUR NATUREL VIA ID.
+     getElementById() recherche un element d'après son identifiant (attribut: id)
+     getElementByTagname () : Recherche un element d'après leur type (balise)
+     getElementByClassName() : Recherche un element d'après leur class (attribut : class)
+     querySelector () : retourne le premier élément trouvé, ou null si aucun n'objet correspond n'est trouvé.
+     querySelectorall () : retourne le premier élément trouvé, (type de retour:Nodelist), ou un tableau Nodelist, videsi rien n'est trouvé.
+
+
+
+    */
+  </script>
+</body>
+</html>

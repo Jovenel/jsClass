@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+  align-items: center;
+  background: linear-gradient(to right, rgb(44, 2, 61), rgb(194, 236, 126));
+  display: flex;
+  height: auto;
+  justify-content: center;
+}
+h1{
+    text-align: center;
+}
+.conteneur{
+    background-color: white;
+    padding: 30px;
+    width: 1000px;
+    margin: 0 auto; 
+    opacity: 0.7;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: #3a2e3f 10px 10px 10px;
+    height: 100vh;
+    
+}
+
+button {
+	background-color: #9cac13;
+	border: 2px solid #3a2e3f;
+	border-radius: 4px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 16px;
+	padding: 10px;
+	margin: 20px;
+    transition: 2s;
+}
+button:hover{
+    background-color: rgb(14, 2, 2);
+    
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    position: relative;
+}
+.bleu {
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+    top:0;
+    transition: 2s;
+}
+.bleuclair{
+    width: 100px;
+    height: 50px;
+    background-color: rgb(101, 101, 196);
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+    top:0;
+}
+
+#bleu2{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    position: relative;
+    top:0;
+    transition: 2s;
+}
+
+
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  body {
+    background-color: rgb(134, 238, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  #move {
+    background-color: green;
+    text-align: center;
+    height: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+    color: white;
+  }
+  
+  .boxes {
+    display: flex;
+  }
+  
+  .boxes div {
+    background-color: rebeccapurple;
+    width: 65px;
+    height: 45px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 35px;
+    color: transparent;
+  }
+  
+  .new {
+    margin-top: 100px;
+  }
+   */
+
+   /* Alexis body {
+    margin: 0;
+    font-family: "Noto Serif", serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 110px;
+    background: #673ab7;
+    color: white;
+    margin-top: 0;
+    padding: 20px;
+  }
+  .conteneur {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .btn_move {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  button {
+    width: 50px;
+    height: 30px;
+    background: rgb(156, 53, 16);
+    margin: 10px;
+    border-radius: 5px;
+    border-style: hidden;
+    cursor: pointer;
+    color: white;
+  }
+  .conteneur div {
+    height: 30px;
+    width: 50px;
+    margin: 9px;
+    border-radius: 5px;
+    background-color: #673ab7;
+  }
+  #bloc2,
+  #bloc4,
+  #bloc6,
+  #bloc8 {
+    background-color: blue;
+    position: relative;
+    top: 0px;
+    transition: 0.5s;
+  } */
+  

@@ -1,0 +1,57 @@
+
+h1{
+    text-align: center;
+    background-color: rgb(86, 122, 153);
+    height: 50px;
+    width: 100%;
+}
+.display{
+    margin: 0 auto ;
+    max-width: 1000px;
+}
+section {
+    background-color: white;
+    min-height: 500px;
+    padding: 20px 0;
+}
+footer {
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+label {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+label span:last-child {
+    color: royalblue;
+}
+form {
+    width: 50%;
+    padding:  20px;
+    border: 1px solid;
+    margin: 20px auto;
+}
+input, select, textarea {
+    border: 1px solid #dedede;    
+    width: 100%;
+    margin-bottom: 15px;
+    resize: none;
+    font-size: 18px;
+}
+input, select {
+    height: 35px;
+}
+
+form button {
+    padding: 10px 0;
+    background-color: rgb(238, 66, 13);
+    color: white;
+    border: 0;
+}
+form button:hover {
+    background-color: rgb(38, 67, 156);
+    cursor: pointer;
+}

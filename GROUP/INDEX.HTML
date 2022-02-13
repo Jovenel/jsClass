@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Entrez une valeur ici" id="test">
+    <button type="button"> Récupérer la valeur</button>
+      </form>
+</body>
+
+<script  type="text/javascript">
+
+function getValue() {
+    // Sélectionner l'élément input et récupérer sa valeur
+    let input = document.getElementById("test").value;
+    // Afficher la valeur
+    document.write('test'+input);
+}
+</script>
+</html>
+-->
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        JavaScript 
+      | Set the value of an input field.
+    </title>
+</head>
+  
+<body>
+    
+    
+
+    <script>
+     const inputText = document.querySelector('#txt');
+      const myButton = document.querySelector('.btn-list');
+      const list = document.querySelector('.container ul');
+      myButton.addEventListener('click', (e)=>{
+        if(inputText.value != ""){
+          e.preventDefault();
+          const myLi = document.createElement('li');
+          myLi.innerHTML = inputText.value;
+          list.appendChild(myLi);
+          const mySpan = document.createElement('span');
+          mySpan.innerHTML = 'x';
+          myLi.appendChild(mySpan);
+
+        }
+        var close = document.querySelectorAll('span');
+        var num = close.length;
+        for(let i in close){
+          close[i].addEventListener('click', ()=>{
+            close[i].parentElement.style.opacity = 0;
+            setTimeout(()=>{
+              close[i].parentElement.style.display = "none";
+            }, 500);
+          });
+          inputText.value = "";
+      }
+
+      });
+    </script>
+</body>
+  
+</html>

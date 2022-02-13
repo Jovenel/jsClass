@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    background-color: rgb(86, 122, 153);
+    height: 50px;
+    width: 100%;
+}
+
+label {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+form {
+    width: 50%;
+    padding:  20px;
+    border: 1px solid;
+    margin: 20px auto;
+    align-items: center;
+    color: white;
+}
+
+form button {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(238, 66, 13);
+    color: white;
+    border: 0;
+}
+form button:hover {
+    background-color: rgb(38, 67, 156);
+    cursor: pointer;
+}
+#error_date{
+    color: red;
+}
